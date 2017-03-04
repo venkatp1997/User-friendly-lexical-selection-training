@@ -1,0 +1,17 @@
+training:
+        corpus: Europarl3
+        pair: es-pt
+        sl: pt
+        tl: es
+        data: /home/philip/Apertium/apertium-es-pt
+        lex_tools: /home/philip/Apertium/apertium-lex-tools
+        scripts: /home/philip/Apertium/apertium-lex-tools/scripts
+        mosesdecoder: /home/philip/Apertium/mosesdecoder/scripts/training
+        training_lines: 100000
+learning:
+        bin_dir: /home/philip/Apertium/smt/bin
+        lm: /home/philip/Apertium/gsoc2013/giza/europarl.lm
+        run_mle: True
+        run_mer: True
+        mle_crisphold: 1.5
+        mer_min: 1

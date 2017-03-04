@@ -1,0 +1,55 @@
+type: map
+mapping:
+  training:
+    type: map
+    required: True
+    mapping:
+     corpus:
+      type: str
+      required: True
+     pair:
+      type: str
+      required: True
+     sl:
+      type: str
+      required: True
+     tl:
+      type: str
+      required: True
+     data:
+      type: str
+      required: True
+     lex_tools:
+      type: str
+      required: True
+     scripts:
+      type: str
+      required: True
+     mosesdecoder:
+      type: str
+      required: True
+     training_lines:
+      type: int
+      required: True
+  learning:
+    type: map
+    required: True
+    mapping:
+     bin_dir:
+      type: str
+      required: True
+     lm:
+      type: str
+      required: True
+     run_mle:
+      type: bool
+      required: True
+     run_mer:
+      type: bool
+      required: True
+     mle_crisphold:
+      type: float
+      required: True
+     mer_min:
+      type: int
+      required: True
