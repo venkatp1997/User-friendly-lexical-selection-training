@@ -28,7 +28,7 @@ mapping:
      mosesdecoder:
       type: str
       required: True
-     training_lines:
+     lines:
       type: int
       required: True
   learning:

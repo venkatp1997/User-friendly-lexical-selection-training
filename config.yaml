@@ -1,16 +1,16 @@
 training:
-        corpus: Europarl3
-        pair: es-pt
-        sl: pt
-        tl: es
-        data: /home/philip/Apertium/apertium-es-pt
-        lex_tools: /home/philip/Apertium/apertium-lex-tools
-        scripts: /home/philip/Apertium/apertium-lex-tools/scripts
-        mosesdecoder: /home/philip/Apertium/mosesdecoder/scripts/training
-        training_lines: 100000
+        corpus: europarl-v7
+        pair: es-en
+        sl: es
+        tl: en
+        data: /home/venkat/Apertium/apertium-en-es
+        lex_tools: /home/venkat/Apertium/apertium-lex-tools
+        scripts: /home/venkat/Apertium/apertium-lex-tools/scripts
+        mosesdecoder: /home/venkat/Apertium/mosesdecoder/scripts/training
+        lines: 1000
 learning:
-        bin_dir: /home/philip/Apertium/smt/bin
-        lm: /home/philip/Apertium/gsoc2013/giza/europarl.lm
+        bin_dir: /home/venkat/Apertium/mgiza/mgizapp/bin
+        lm: /home/venkat/Apertium/lm/train.lm
         run_mle: True
         run_mer: True
         mle_crisphold: 1.5
